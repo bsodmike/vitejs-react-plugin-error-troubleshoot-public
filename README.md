@@ -25,6 +25,8 @@ Possible info:
 
 - https://github.com/vitejs/vite-plugin-react/pull/79
 
+This error goes away if we remove the component by commenting out https://github.com/bsodmike/vitejs-react-plugin-error-troubleshoot-public/blob/master/src/main.tsx#L23-L28. There were references to not using `export default`, but that didn't work either (by doing `export const Home`).
+
 ### Other issues
 
 - `http://localhost:5173/@vite-plugin-pwa/pwa-entry-point-loaded net::ERR_ABORTED 404 (Not Found)` - where does this come from?
